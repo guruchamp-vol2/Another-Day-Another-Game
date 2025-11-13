@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEON HAVOC — Neovale Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Three.js and postprocessing (CDN) -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/RGBELoader.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/postprocessing/EffectComposer.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/postprocessing/RenderPass.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/postprocessing/ShaderPass.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/shaders/CopyShader.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="title">NEON HAVOC</div>
+      <div class="subtitle">Neovale Systems Prototype</div>
+      <div class="header-right">
+        <div id="clock">Day 1 — 00:00</div>
+        <button id="pauseBtn" class="btn">Pause</button>
+        <button id="stepBtn" class="btn">Step Hour</button>
+        <button id="photoBtn" class="btn">Photo Mode</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="left">
+        <div class="panel">
+          <h3>3D View</h3>
+          <div id="threeContainer" class="three-container">
+            <canvas id="threeCanvas"></canvas>
+            <canvas id="miniMap" class="minimap"></canvas>
+            <div class="hud-overlay" id="hudOverlay">
+              <div class="hud-row">
+                <span class="chip chrome"></span> Chrome
+                <span class="chip rustline"></span> Rustline
+                <span class="chip underhollow"></span> Underhollow
+              </div>
+            </div>
+          </div>
+          <div class="btn-row" id="photoControls" style="display:none;margin-top:8px;">
+            <button class="btn small" data-photo="toggleDoF">Toggle DOF</button>
+            <button class="btn small" data-photo="resetCam">Reset Cam</button>
+            <button class="btn small" data-photo="toggleUI">Toggle UI</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Player: Ryker Vale</h3>
+          <div id="playerPanel"></div>
+          <div class="btn-row">
+            <button class="btn small" data-action="public_savior">Expose Corruption</button>
+            <button class="btn small" data-action="tyrant_takeover">Seize Control</button>
+            <button class="btn small" data-action="ghost_influence">Shadow Control</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="center">
+        <div class="panel">
+          <h3>District State</h3>
+          <div id="districtPanel" class="grid"></div>
+        </div>
+
+        <div class="panel">
+          <h3>Available Activities</h3>
+          <div id="activitiesPanel" class="list"></div>
+        </div>
+      </section>
+
+      <section class="right">
+        <div class="panel">
+          <h3>Factions</h3>
+          <div id="factionsPanel" class="list"></div>
+        </div>
+
+        <div class="panel">
+          <h3>Event Log</h3>
+          <div id="logPanel" class="log"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

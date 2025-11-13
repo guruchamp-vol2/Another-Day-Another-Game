@@ -1,0 +1,32 @@
+[
+  {
+    "id": "chrome",
+    "name": "The Chrome District",
+    "layer": "upper",
+    "visuals": {
+      "neon": true,
+      "drones": true,
+      "hoverways": true
+    }
+  },
+  {
+    "id": "rustline",
+    "name": "The Rustline",
+    "layer": "mid",
+    "visuals": {
+      "markets": true,
+      "graffiti": true,
+      "races": true
+    }
+  },
+  {
+    "id": "underhollow",
+    "name": "The Underhollow",
+    "layer": "under",
+    "visuals": {
+      "fog": true,
+      "ruins": true,
+      "mutants": true
+    }
+  }
+]

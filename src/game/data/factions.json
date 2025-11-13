@@ -1,0 +1,7 @@
+[
+  { "name": "The Ember Syndicate", "type": "gang", "power": 0.55 },
+  { "name": "VoltBlock Crew", "type": "gang", "power": 0.50 },
+  { "name": "The ScorpTek Militia", "type": "merc", "power": 0.45 },
+  { "name": "BioVex Cult", "type": "rebel", "power": 0.40 },
+  { "name": "Dominion Corps", "type": "corp", "power": 0.65 }
+]

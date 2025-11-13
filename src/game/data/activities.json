@@ -1,0 +1,11 @@
+[
+  {"name":"Street Race: Skybridge Dash","layers":["upper"],"tags":["race"],"desc":"High-speed hover-limo lanes turned into illegal race tracks."},
+  {"name":"Data Heist: Boardroom Breach","layers":["upper"],"tags":["hack","sabotage"],"desc":"Jack into corp intranets from a rooftop relay."},
+  {"name":"Cargo Smash & Grab","layers":["mid"],"tags":["combat","sabotage"],"desc":"Ambush a convoy moving through the Rustline markets."},
+  {"name":"Parkour: Neon Hops","layers":["mid"],"tags":["parkour"],"desc":"Chain wall-runs across holo-billboards and rusted catwalks."},
+  {"name":"Drone Delivery: Night Shift","layers":["mid"],"tags":["delivery","hack"],"desc":"Spoof waypoints and deliver contraband quietly."},
+  {"name":"Underhollow Hunt: Echo-Beast","layers":["under"],"tags":["monster","combat"],"desc":"Track and neutralize a mutated creature in the fog."},
+  {"name":"Arena: Shockglove Circuit","layers":["mid","under"],"tags":["combat"],"desc":"Bare-knuckle cyber bouts with EMP hazards."},
+  {"name":"ATM Siphon","layers":["upper","mid"],"tags":["hack"],"desc":"Discreetly breach ATM clusters for credits."},
+  {"name":"Camera Scrub: Clean the Scene","layers":["upper","mid"],"tags":["hack"],"desc":"Erase evidence after a high-profile job."}
+]
